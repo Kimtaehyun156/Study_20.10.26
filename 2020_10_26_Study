@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+// C언어 기초문법
+
+int main(void)
+{
+   // 기본출력
+   printf("이름 : 김태현 \n");
+   printf("나이 : 29 \n");
+   printf("주소 : 양지 \n");
+   
+   // 프린트문으로  이름 출력하기
+   printf("김태현 \n 김 태 현 \n 김   태   현\n");
+
+   //서식문자 
+   printf("Hello Everybody \n");
+   printf("%d \n",1234);
+   printf("%d %d \n",10,20);   //정수
+   printf("%f %f \n",0.1,0.2); //실수
+
+   //진법 (어떤  데이터가 입력되는가보다는 
+   //어떤 제어문자를 써주는지 )
+   // %d : 10진 정수 
+   printf(" Decimal : %d \n",173); // 10진수
+   printf(" Decimal : %d \n",0255); // 8진수 
+   printf(" Decimal : %d \n",0xAD); // 16진수
+   // %o : 8진 정수 
+   printf(" Octal : %o \n",173); // 10진수
+   printf(" Octal : %o \n",0255); // 8진수
+   printf(" Octal : %o \n",0xAD); // 16진수
+   // %x : 16진 정수
+   printf("Hexadecimal :%x \n",173); // 10진수
+   printf("Hexadecimal :%x \n",0255); // 8진수
+   printf("Hexadecimal :%x \n",0xAD); // 16진수
+
+   //Quiz
+   //   4 * 5 = 20
+   //  7 * 9 = 63
+   // 출력되는 숫자들을 서식문자 %d를 이용해서 출력하자
+   printf(" %d * %d = %d \n",4,5,20);
+   printf(" %d * %d = %d \n",7,9,63);
+
+   printf("======================================================\n");
+   printf("이름          나이       주소  \n");
+   printf("======================================================\n");
+   printf("홍길동         %d         산골짜기%d동%d호\n",20,102,205);
+   printf("이순신         %d           명량 수심%d M \n",28,2000);
+   return 0;
+}
